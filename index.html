@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro DevOps Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Pomodoro Timer</h1>
+      <p id="mode">Work Session</p>
+      <div id="timer" class="timer">25:00</div>
+
+      <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+      <div class="settings">
+        <label>Work (minutes)
+          <input id="workInput" type="number" min="1" max="120" value="25">
+        </label>
+        <label>Break (minutes)
+          <input id="breakInput" type="number" min="1" max="60" value="5">
+        </label>
+        <button id="saveBtn">Save Settings</button>
+      </div>
+
+      <p>Completed work sessions: <strong id="sessions">0</strong></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
